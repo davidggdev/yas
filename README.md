@@ -1,4 +1,4 @@
-# Yas
+# YAS
 
 Yet Another Slider is a jQuery plugin to create sliders with images. 
 very basic and made mostly as a test to adapt new coding styles to the 
