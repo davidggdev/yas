@@ -24,8 +24,7 @@ Finally, the css file must be linked/copy:
 
 This is generated from a Sass compiler from the source file style.scss. 
 Currently the styles applied are example styles and we try to keep the responsibility for
-the size to the developer to apply their own customization styles.
-own customization styles.
+the size to the developer to apply their own customization styles. 
  
 
 ## Running 
