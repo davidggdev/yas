@@ -6,8 +6,16 @@ body {
     height: 100%;
     background-color: rgb(47, 31, 63);
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
-
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .yas-slider-main {
     position: relative;
     .yas-slider-viewport {
@@ -115,6 +123,57 @@ body {
                 border: 1px solid rgb(255, 255, 255, 0.7);
                 &.--selected {
                     background-color: rgb(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+}
+
+.my-slider__controls{
+    background-color: #121212;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    .prev{
+        display: inline-block;
+        padding: 7px; 
+        color: #c2c2c2;
+        vertical-align: top;
+        background: #413152;
+        font-family: monospace;
+        cursor: pointer;
+        transition: all .333s linear;
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+    .next{
+        display: inline-block;
+        padding: 7px; 
+        color: #c2c2c2;
+        vertical-align: top;
+        background: #413152;
+        font-family: monospace;
+        cursor: pointer;
+        transition: all .133s linear;
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+    .dots{
+        display: inline-block;
+        .yas-slider-controls__dots{
+            display: inline-block;
+            .--dot {
+                display: inline-block;
+                width: 8px;
+                height: 8px;  
+                margin: 10px 15px;
+                cursor: pointer;
+                background-color: #532d53;
+                &.--selected {
+                    background-color: #b66dff;
                 }
             }
         }

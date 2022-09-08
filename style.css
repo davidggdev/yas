@@ -6,6 +6,16 @@ body {
   height: 100%;
   background-color: rgb(47, 31, 63);
   position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .yas-slider-main {
@@ -113,4 +123,55 @@ body {
 }
 .my-slider .yas-slider-controls .yas-slider-controls__dots .--dot.--selected {
   background-color: rgba(255, 255, 255, 0.7);
+}
+
+.my-slider__controls {
+  background-color: #121212;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.my-slider__controls .prev {
+  display: inline-block;
+  padding: 7px;
+  color: #c2c2c2;
+  vertical-align: top;
+  background: #413152;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.333s linear;
+}
+.my-slider__controls .prev:active {
+  transform: translateY(2px);
+}
+.my-slider__controls .next {
+  display: inline-block;
+  padding: 7px;
+  color: #c2c2c2;
+  vertical-align: top;
+  background: #413152;
+  font-family: monospace;
+  cursor: pointer;
+  transition: all 0.133s linear;
+}
+.my-slider__controls .next:active {
+  transform: translateY(2px);
+}
+.my-slider__controls .dots {
+  display: inline-block;
+}
+.my-slider__controls .dots .yas-slider-controls__dots {
+  display: inline-block;
+}
+.my-slider__controls .dots .yas-slider-controls__dots .--dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 10px 15px;
+  cursor: pointer;
+  background-color: #532d53;
+}
+.my-slider__controls .dots .yas-slider-controls__dots .--dot.--selected {
+  background-color: #b66dff;
 }/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,17 @@ PAY ATTENTION
 
 This software is in a fully alpha version and its stability, performance or 
 side effects is not assured.
+ 
+# [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+
+2022-09-08 - alpha 1 complete!  
+
+- [x] Slide 
+- [x] [Options](#Options)
+    - [x] autoplay
+    - [x] custom elements prev/next
+- [x] Make dots come live!
+- [x] Set class selected to element in viewport 
 
 ## Getting Started
 
@@ -40,6 +51,10 @@ show in the slider:
 </div>
 ```
 
+It is important to note that currently it only works with img elements only. 
+The slider transforms into divs with a series of options and setting 
+the image as background-image.
+
 Then in our javascript we will create the instance:
 
 
@@ -52,8 +67,114 @@ Then in our javascript we will create the instance:
 });
  ```
  
-![snapshot](http://davidggdev.es/images/snapshot_01.jpg)
+![snapshot](http://davidggdev.es/images/snapshot_02.jpg)
+
+## <a name="Options"></a>Options
+
+It is possible to pass a series of options to configure 
+certain attributes of the slider.
+
+Currently it is possible to activate the autorun and define the 
+direction and time between slides.
  
+Additionally you can customize the elements where to move the slider controls 
+to place them where needed. It is important to remember that when activating a 
+custom control the default element will no longer have any effect and functionality.
+
+This is an example of how you can customize a slider by replacing 
+the predefined controls:
+
+In the js instance:
+ ```javascript
+ $(function($){
+    "use strict";
+
+    // yasSlider instance
+    $('.my-slider').yasSlider({
+        autorun : {                         // Active autorun slide
+            reverse_direction : false,      // Value by default LTR
+            speed_interval : 1000           // Speed between slides
+        },
+        prevElement : $('.prev'),           // Custom html element Pre control
+        nextElement : $('.next'),           // Custom html element Next control
+        dotsElement : $('.dots')            // Custom html element Dots control
+    });
+});
+ ```
+
+And the html:
+```html
+<div class="my-slider" yas-slider>
+    <img src="assets/slider/alain-bonnardeaux-nWMAakp1dKU-unsplash-min.jpg" alt="">
+    <img src="assets/slider/kentaro-toma-gG917yFiR-U-unsplash-min.jpg" alt="">
+    <img src="assets/slider/pawel-czerwinski-Sw-m6aYWPFw-unsplash-min.jpg" alt="">
+</div>
+
+<div class="my-slider__controls">
+    <div class="prev">Prev</div>
+    <div class="dots"></div>
+    <div class="next">Next</div>
+</div>
+```
+
+Some sass:
+```scss
+.my-slider__controls{
+    background-color: #121212;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    .prev{
+        display: inline-block;
+        padding: 7px; 
+        color: #c2c2c2;
+        vertical-align: top;
+        background: #413152;
+        font-family: monospace;
+        cursor: pointer;
+        transition: all .333s linear;
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+    .next{
+        display: inline-block;
+        padding: 7px; 
+        color: #c2c2c2;
+        vertical-align: top;
+        background: #413152;
+        font-family: monospace;
+        cursor: pointer;
+        transition: all .133s linear;
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+    .dots{
+        display: inline-block;
+        .yas-slider-controls__dots{
+            display: inline-block;
+            .--dot {
+                display: inline-block;
+                width: 8px;
+                height: 8px;  
+                margin: 10px 15px;
+                cursor: pointer;
+                background-color: #532d53;
+                &.--selected {
+                    background-color: #b66dff;
+                }
+            }
+        }
+    }
+}
+```
+
+Ta-da!
+
+![snapshot](http://davidggdev.es/images/snapshot_01.jpg)
+
 ## Authors
 
   - **David González** - *davidggdev@davidggdev.es*
