@@ -8,9 +8,14 @@ PAY ATTENTION
 This software is in a fully alpha version and its stability, performance or 
 side effects is not assured.
  
-# [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+# Updates
 
-2022-09-08 - alpha 1 complete!  
+Only sumatory versions log.
+
+---
+
+![](https://img.shields.io/badge/UPDATE-2022/09/08-red?style=for-the-badge) 
+![](https://img.shields.io/badge/Alpha_1_complete-2022/09/07-red?style=for-the-badge&logo=esbuild&labelColor=1e485a&logoColor=white) 
 
 - [x] Slide 
 - [x] [Options](#Options)
@@ -18,6 +23,13 @@ side effects is not assured.
     - [x] custom elements prev/next
 - [x] Make dots come live!
 - [x] Set class selected to element in viewport 
+
+---
+
+![](https://img.shields.io/badge/UPDATE-2022/09/07-red?style=for-the-badge) 
+![](https://img.shields.io/badge/Alpha_1_init-2022/09/07-red?style=for-the-badge&logo=esbuild&labelColor=1e485a&logoColor=white) 
+ 
+Setup proyect and repository
 
 ## Getting Started
 
