@@ -1,5 +1,7 @@
 # YAS
 
+![snapshot](http://davidggdev.es/images/snapshot_02.jpg)
+
 Yet Another Slider is a jQuery plugin to create sliders with images. 
 very basic and made mostly as a test to adapt new coding styles.  
 
@@ -78,8 +80,6 @@ Then in our javascript we will create the instance:
     $('.my-slider').yasSlider({});
 });
  ```
- 
-![snapshot](http://davidggdev.es/images/snapshot_02.jpg)
 
 ## <a name="Options"></a>Options
 
