@@ -16,8 +16,10 @@ Only sumatory versions log.
 
 ---
 
+ 
+
+![](https://img.shields.io/badge/Alpha_2_wip-5c7219?style=for-the-badge&logo=esbuild&labelColor=1e485a&logoColor=white) 
 ![](https://img.shields.io/badge/UPDATE-2022/09/08-red?style=for-the-badge) 
-![](https://img.shields.io/badge/Alpha_1_complete-2022/09/07-red?style=for-the-badge&logo=esbuild&labelColor=1e485a&logoColor=white) 
 
 - [x] Slide 
 - [x] [Options](#Options)
@@ -27,9 +29,9 @@ Only sumatory versions log.
 - [x] Set class selected to element in viewport 
 
 ---
-
+ 
+![](https://img.shields.io/badge/Alpha_1_init-196672?style=for-the-badge&logo=esbuild&labelColor=1e485a&logoColor=white) 
 ![](https://img.shields.io/badge/UPDATE-2022/09/07-red?style=for-the-badge) 
-![](https://img.shields.io/badge/Alpha_1_init-2022/09/07-red?style=for-the-badge&logo=esbuild&labelColor=1e485a&logoColor=white) 
  
 Setup proyect and repository
 
